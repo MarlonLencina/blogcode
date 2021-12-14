@@ -1,7 +1,7 @@
 import { Container, GoBack, Article } from "./StylesPost";
 import { Icon } from "@iconify/react";
 import { GetStaticProps, GetStaticPaths } from "next";
-import { CreatePrismicClient } from "../services/prismic";
+import { CreatePrismicClient } from "../../services/prismic";
 import Prismic from "@prismicio/client";
 import { RichText } from "prismic-dom";
 import { RichText as ReactRichText } from "prismic-reactjs";
@@ -26,7 +26,7 @@ const Post = ({ post }: post) => {
   return (
     <>
       <Container>
-        <Link href="/" passHref>
+        <Link href="/home" passHref>
           <GoBack>
             <Icon icon="ant-design:arrow-left-outlined" />
             <p>Voltar para home</p>

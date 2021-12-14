@@ -4,7 +4,7 @@ import { Icon as Iconify } from "@iconify/react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { GetStaticProps } from "next";
-import { CreatePrismicClient } from "./services/prismic";
+import { CreatePrismicClient } from "../../services/prismic";
 import Prismic from "@prismicio/client";
 import { RichText } from "prismic-dom";
 

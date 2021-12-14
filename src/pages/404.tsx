@@ -9,7 +9,7 @@ export default PageNotFound;
 export const getStaticProps: GetStaticProps = async () => {
   return {
     redirect: {
-      destination: "/",
+      destination: "/home",
       permanent: true,
     },
   };
